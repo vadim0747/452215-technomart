@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
 
-    font-family: "Cuprum", "Tahoma", "Arial", sans-serif;
+    font-family: 'Cuprum', 'Tahoma', 'Arial', sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
@@ -45,7 +45,7 @@ input[type="radio"].visually-hidden {
 
 .header-top {
     min-height: 42px;
-    margin-bottom: 46px;
+    margin-bottom: 49px;
 
     background-color: #33445a;
 }
@@ -120,11 +120,9 @@ input[type="radio"].visually-hidden {
     border: none;
 }
 
-.header-search input::-webkit-input-placeholder {
-    color: #ffffff;
-}
-
-.header-search input::-moz-placeholder {
+.header-search input::-webkit-input-placeholder,
+.header-search input::-moz-placeholder,
+.header-search input::placeholder {
     color: #ffffff;
 }
 
@@ -177,6 +175,10 @@ input[type="radio"].visually-hidden {
 .basket-link a {
     box-sizing: border-box;
     padding-left: 44px;
+}
+
+.basket-link-red {
+    background-color: #ee3643;
 }
 
 .bookmarks-link a::before {
@@ -246,7 +248,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header-desc {
-    width: 268px;
+    width: 200px;
     margin: 0;
     margin-left: 52px;
     padding: 0;
@@ -264,6 +266,7 @@ input[type="radio"].visually-hidden {
     flex-direction: column;
     width: 270px;
     margin: 0;
+    margin-left: 70px;
     padding: 0;
 }
 
@@ -271,8 +274,8 @@ input[type="radio"].visually-hidden {
     box-sizing: border-box;
     width: 270px;
     margin: 0;
-    margin-bottom: 10px;
-    padding: 8px 0;
+    margin-bottom: 8px;
+    padding: 7px 0;
     padding-left: 72px;
 
     font-size: 21px;
@@ -282,7 +285,7 @@ input[type="radio"].visually-hidden {
 
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
-    background-position: 14px 10px;
+    background-position: 11px 8px;
     border: 2px solid #ffffff;
 }
 
@@ -371,11 +374,12 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     margin: 0;
-    margin-top: 44px;
-    margin-bottom: 60px;
+    margin-top: 40px;
+    margin-bottom: 63px;
     padding: 0;
 
     background-color: #3d546e;
@@ -386,7 +390,8 @@ input[type="radio"].visually-hidden {
 
 .site-navigation a {
     display: inline-block;
-    padding: 20px 31px;
+    vertical-align: baseline;
+    padding: 18px 31px;
 
     color: #ffffff;
     font-size: 17px;
@@ -424,7 +429,7 @@ input[type="radio"].visually-hidden {
     position: relative;
 
     width: 300px;
-    height: 125px;
+    height: 123px;
 
     background-repeat: no-repeat;
 }
@@ -481,7 +486,7 @@ input[type="radio"].visually-hidden {
 
 .goods-and-services h3 {
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     padding: 0;
 
     font-style: normal;
@@ -492,6 +497,7 @@ input[type="radio"].visually-hidden {
 
 .goods-and-services a {
     display: inline-block;
+    vertical-align: baseline;
     width: 135px;
     padding: 10px 0;
 
@@ -524,7 +530,7 @@ input[type="radio"].visually-hidden {
 
 .goods-item-wrapper {
     margin-left: 23px;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .slider {
@@ -554,6 +560,7 @@ input[type="radio"].visually-hidden {
 
 .slider-controls label {
     display: inline-block;
+    vertical-align: baseline;
     width: 7px;
     height: 7px;
     margin: 0 3px;
@@ -684,8 +691,9 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
 }
 
-body .button {
+.button {
     display: inline-block;
+    vertical-align: baseline;
 
     padding: 10px 0;
 
@@ -703,12 +711,12 @@ body .button {
     border-radius: 4px;
 }
 
-body .button:hover,
-body .button:focus {
+.button:hover,
+.button:focus {
     background-color: #ca2c37;
 }
 
-body .button:active {
+.button:active {
     background-color: #ba2732;
 }
 
@@ -721,6 +729,10 @@ body .button:active {
     background-color: #f9f5f0;
 }
 
+.popular-comp {
+    margin-top: 20px;
+}
+
 .popular-header .button-popular {
     min-width: 250px;
 }
@@ -730,7 +742,7 @@ body .button:active {
     padding: 0;
     padding-left: 30px;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 29px;
 
     font-style: normal;
     font-size: 30px;
@@ -798,6 +810,8 @@ body .button:active {
 .popular-list .product-image {
     width: 218px;
     height: 168px;
+
+    margin-top: 10px;
 }
 
 .popular-list a {
@@ -810,6 +824,8 @@ body .button:active {
 
 .product-image img {
     max-width: 100%;
+
+    margin-top: 30px;
 }
 
 .product-menu {
@@ -817,9 +833,8 @@ body .button:active {
 }
 
 .popular-list p {
-    min-height: 40px;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 0px;
+    margin-bottom: 12px;
     padding: 0 25px;
 }
 
@@ -832,7 +847,7 @@ body .button:active {
 }
 
 .old-price {
-    min-height: 20px;
+    min-height: 16px;
     margin-top: 15px;
     margin-bottom: 10px;
 
@@ -843,7 +858,7 @@ body .button:active {
 .current-price {
     position: relative;
     width: 80px;
-    margin: 10px auto;
+    margin: 0px auto;
     margin-bottom: 20px;
     padding: 10px 30px;
     color: #ffffff;
@@ -865,7 +880,7 @@ body .button:active {
     border-left-color: #ee3643;
 }
 
-li .product-menu {
+.product-menu {
     position: absolute;
     top: 0;
     left: 0;
@@ -878,8 +893,8 @@ li .product-menu {
     background-color: rgba(255,255,255,0.9);
 }
 
-li .product-menu .button-buy,
-li .product-menu .button-add {
+.product-menu .button-buy,
+.product-menu .button-add {
     display: block;
     width: 129px;
     margin: 0 auto;
@@ -900,32 +915,32 @@ li .product-menu .button-add {
     border-bottom-color: #367315;
 }
 
-li .product-menu .button-buy:hover,
-li .product-menu .button-buy:focus {
+.product-menu .button-buy:hover,
+.product-menu .button-buy:focus {
     background-color: #5fbb2d;
 }
 
-li .product-menu .button-buy:active {
+.product-menu .button-buy:active {
     background-color: #518534;
 }
 
-li .product-menu .button-add {
+.product-menu .button-add {
     color: #32425c;
 
     background-color: #ffffff;
     border-bottom-color: #63a63e;
 }
 
-li .product-menu .button-add:hover,
-li .product-menu .button-add:focus {
+.product-menu .button-add:hover,
+.product-menu .button-add:focus {
     border-color: #32425c;
 }
 
-li .product-menu .button-add:active {
+.product-menu .button-add:active {
     opacity: 0.3;
 }
 
-li .product-menu {
+.product-menu {
     display: none;
 }
 
@@ -954,7 +969,7 @@ li:hover .product-menu {
     width: 220px;
     margin-bottom: 20px;
 
-    outline: 1px solid #eaeaea;
+    border: 1px solid #eaeaea;
 }
 
 .brands-list li:hover {
@@ -968,7 +983,8 @@ li:hover .product-menu {
 
 .brands-list img {
     width: 100%;
-    height: auto;
+    height: auto; 
+    margin-top: 3px;
 }
 
 .service {
@@ -1003,6 +1019,7 @@ li:hover .product-menu {
 
 .service-header {
     padding-top: 68px;
+    padding-right: 530px;
 }
 
 .service-slider {
@@ -1013,7 +1030,7 @@ li:hover .product-menu {
 
 .features-list {
     position: relative;
-    width: 320px;
+    width: 360px;
 }
 
 .features-list::after {
@@ -1064,7 +1081,7 @@ li:hover .product-menu {
     margin-left: 80px;
 
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: right 21px;
 }
 
 .service-item-block .section-desc {
@@ -1214,7 +1231,7 @@ li:hover .product-menu {
 .footer-social-list,
 .modal-cart-list,
 .breadcrumbs,
-fieldset ul,
+.filter-list,
 .pagination-list {
     padding: 0;
     margin: 0;
@@ -1291,7 +1308,6 @@ fieldset ul,
     display: flex;
     padding: 0;
     margin: 0;
-    margin-top: 2px;
 
     list-style: disc;
 }
@@ -1346,7 +1362,11 @@ fieldset ul,
     position: relative;
 
     display: inline-block;
-    padding: 20px 23px;
+    vertical-align: baseline;
+
+    padding: 0 18px;
+    padding-top: 21px;
+    padding-bottom: 21px;
 }
 
 .breadcrumbs li::after {
@@ -1354,7 +1374,7 @@ fieldset ul,
 
     position: absolute;
     top: 23px;
-    left: 0;
+    left: -7px;
 
     width: 7px;
     height: 14px;
@@ -1400,7 +1420,7 @@ fieldset ul,
 
 .content-header {
     margin: 0;
-    padding: 13px 19px;
+    padding: 10px 19px;
 
     font-size: 13px;
     font-weight: 400;
@@ -1427,7 +1447,7 @@ fieldset ul,
 }
 
 .filter legend {
-    padding: 12px 0;
+    padding: 13px 0;
 
     font-size: 17px;
     font-weight: 700;
@@ -1472,7 +1492,7 @@ fieldset ul,
     height: 4px;
 
     background: #ababab;
-    border: 8px solid #fff;
+    border: 8px solid #ffffff;
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 #cfcfcf;
 
@@ -1520,13 +1540,17 @@ fieldset ul,
 
     display: block;
     padding-left: 35px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 
     font-size: 15px;
     font-weight: 400;
     line-height: 20px;
 
     text-transform: uppercase;
+}
+
+.filter-option .power {
+    margin-top: 10px;
 }
 
 .filter-option .producers::before {
@@ -1549,17 +1573,17 @@ fieldset ul,
     background-image: url("../img/checkbox-off-hover.svg");
 }
 
-.filter-option .checkbox:disabled ~ .producers::before {
+.checkbox:disabled ~ .producers::before {
     background-image: url("../img/checkbox-off-hover.svg");
     opacity: 0.5;
 }
 
-.filter-option .checkbox:disabled ~ .producers::after {
+.checkbox:disabled ~ .producers::after {
     background-image: url("../img/checkbox-on-hover.svg");
     opacity: 0.5;
 }
 
-.filter-option .checkbox:disabled + .producers {
+.checkbox:disabled + .producers {
     opacity: 0.3;
 }
 
@@ -1621,21 +1645,22 @@ fieldset ul,
     background-image: url("../img/radio-on-hover.svg");
 }
 
-.filter-option .radio:disabled ~ .power::before {
+.radio:disabled ~ .power::before {
     background-image: url("../img/radio-off-hover.svg");
     opacity: 0.5;
 }
 
-.filter-option .radio:disabled ~ .power::after {
+.radio:disabled ~ .power::after {
     background-image: url("../img/radio-on-hover.svg");
     opacity: 0.5;
 }
 
-.filter-option .radio:disabled + .power {
+.radio:disabled + .power {
     opacity: 0.3;
 }
 
 .filter-button {
+    margin-top: 57px;
     padding: 10px 38px;
 
     background-color: transparent;
@@ -1701,7 +1726,7 @@ fieldset ul,
 
 .page-content .page-title {
     margin: 0;
-    padding: 32px 25px;
+    padding: 30px 27px;
     margin-bottom: 20px;
 
     font-size: 30px;
@@ -1743,6 +1768,7 @@ fieldset ul,
 
 .sort-list li {
     display: inline-block;
+    vertical-align: baseline;
     margin-left: 60px;
 }
 
@@ -1779,6 +1805,7 @@ fieldset ul,
 
 .sort-list-decrease li {
     display: inline-block;
+    vertical-align: baseline;
     margin-right: 15px;
 }
 
@@ -1788,6 +1815,7 @@ fieldset ul,
 
 .sort-list-decrease a {
     display: inline-block;
+    vertical-align: baseline;
     width: 15px;
     height: 15px;
 
@@ -1837,16 +1865,14 @@ fieldset ul,
     margin-bottom: 20px;
 }
 
-.catalog .popular-list li:last-child {
-    margin-bottom: 53px;
-}
-
 .pagination-list {
     margin-bottom: 60px;
+    margin-top: 30px;
 }
 
 .pagination-list li {
     display: inline-block;
+    vertical-align: baseline;
     margin-right: 10px;
 }
 
@@ -1855,7 +1881,7 @@ fieldset ul,
     width: 38px;
     height: 38px;
 
-    color: #000;
+    color: #000000;
     line-height: 38px;
     text-align: center;
     text-transform: uppercase;
@@ -1878,8 +1904,8 @@ fieldset ul,
     outline: 0;
 }
 
-.pagination-list .pagination-item-current a {
-    color: #fff;
+.pagination-item-current .pagination-item-link {
+    color: #ffffff;
     background-color: #ee3643;
     border: 0;
 }
@@ -1890,6 +1916,7 @@ fieldset ul,
 
 .theory .container {
     padding: 65px 0;
+    padding-bottom: 61px;
 }
 
 .theory .section-desc {
@@ -1949,11 +1976,12 @@ fieldset ul,
 
 .footer-top .footer-wrapper:nth-child(2) {
     margin-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 45px;
 }
 
 .footer-top-list li {
     display: inline-block;
+    vertical-align: baseline;
     margin-left: 55px;
 }
 
@@ -1984,17 +2012,18 @@ fieldset ul,
 }
 
 .footer-bottom .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding-top: 35px;
     padding-bottom: 35px;
 }
 
-.footer-bottom p:nth-of-type(2) {
-    margin-right: 50px;
+.footer-bottom p:nth-of-type(3) {
+    width: 100px;
 }
 
-.footer-copyright {
-    width: 390px;
-}
+
 
 .footer-copyright,
 .developers {
@@ -2007,12 +2036,23 @@ fieldset ul,
     color: #ffffff;
 }
 
+.footer-social + .gold {
+    width: 150px;
+}
+
+.footer-copyright {
+    width: 245px;
+}
+
 .footer-social {
-    width: 250px;
+    width: 140px;
+    margin-right: 0px;
+    padding-left: 70px;
 }
 
 .footer-social-list li {
     display: inline-block;
+    vertical-align: baseline;
 }
 
 .footer-social-list a {
@@ -2021,6 +2061,7 @@ fieldset ul,
 
 .social {
     display: inline-block;
+    vertical-align: baseline;
     width: 40px;
     height: 40px;
     background-color: #212a3a;
