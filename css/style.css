@@ -177,6 +177,10 @@ input[type="radio"].visually-hidden {
     padding-left: 44px;
 }
 
+.basket-link .basket-button {
+    padding-left: 50px;
+}
+
 .basket-link-red {
     background-color: #ee3643;
 }
@@ -275,8 +279,9 @@ input[type="radio"].visually-hidden {
     width: 270px;
     margin: 0;
     margin-bottom: 8px;
-    padding: 7px 0;
-    padding-left: 72px;
+    padding-top: 6px;
+    padding-bottom: 7px;
+    padding-left: 70px;
 
     font-size: 21px;
     line-height: 120%;
@@ -375,7 +380,7 @@ input[type="radio"].visually-hidden {
 .site-navigation {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     width: 100%;
     margin: 0;
     margin-top: 40px;
@@ -388,10 +393,29 @@ input[type="radio"].visually-hidden {
     box-shadow: 0 5px #33445a;
 }
 
+.site-navigation li:first-child {
+    margin-left: 22px;
+}
+
+.site-navigation li:nth-child(3) {
+    margin-left: -4px;
+}
+
+.site-navigation li:nth-child(4) {
+    margin-left: -4px;
+}
+
+.site-navigation li:nth-child(5) {
+    margin-left: -4px;
+}
+
 .site-navigation a {
     display: inline-block;
     vertical-align: baseline;
-    padding: 18px 31px;
+
+    padding: 18px 0px;
+    padding-left: 31px;
+    padding-right: 32px;
 
     color: #ffffff;
     font-size: 17px;
@@ -511,6 +535,10 @@ input[type="radio"].visually-hidden {
 
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 4px;
+}
+
+.goods-and-services .catalog-button {
+    background-color: rgba(238, 54, 67, 1);
 }
 
 .goods-and-services a:hover,
@@ -997,6 +1025,8 @@ li:hover .product-menu {
 .service h2 {
     margin: 0;
     padding: 0;
+    padding-top: 2px;
+    padding-left:2px;
 
     font-size: 30px;
     font-weight: 400;
@@ -1070,7 +1100,8 @@ li:hover .product-menu {
     box-sizing: border-box;
     margin: 0;
     padding: 15px 0;
-    padding-left: 20px;
+    padding-top: 13px;
+    padding-left: 22px;
     color: #ffffff;
     background-color: #3d546e;
 }
@@ -1127,7 +1158,7 @@ li:hover .product-menu {
 
 .information {
     min-height: 370px;
-    margin-bottom: 85px;
+    margin-bottom: 82px;
 }
 
 .information .container {
@@ -1158,6 +1189,14 @@ li:hover .product-menu {
     color: #000000;
 }
 
+.information .mt {
+    margin-top: 28px;
+}
+
+.information .mt1 {
+    margin-top: 25px;
+}
+
 .about-us {
     max-width: 540px;
 }
@@ -1173,7 +1212,7 @@ li:hover .product-menu {
 
 .shiping-list li {
     position: relative;
-    margin-bottom: 18px;
+    margin-bottom: 19px;
     padding-left: 36px;
 }
 
@@ -1195,10 +1234,14 @@ li:hover .product-menu {
     margin-left: auto;
 }
 
+.contacts .mt2 {
+    margin-top: 53px;
+}
+
 .buttons-wrapper {
     display: flex;
     flex-direction: row;
-    margin-top: 35px;
+    margin-top: 19px;
 
     justify-content: space-between;
     flex-grow: 2;
@@ -1210,20 +1253,6 @@ li:hover .product-menu {
 
 .buttons-wrapper .about-us-button {
     min-width: 220px;
-}
-
-
-
-
-
-
-
-
-
-
-
-.footer-bottom .container {
-    display: flex;
 }
 
 .features-list,
@@ -1369,6 +1398,10 @@ li:hover .product-menu {
     padding-bottom: 21px;
 }
 
+.breadcrumbs li:last-child {
+    margin-left: 4px;
+}
+
 .breadcrumbs li::after {
     content: "";
 
@@ -1421,6 +1454,7 @@ li:hover .product-menu {
 .content-header {
     margin: 0;
     padding: 10px 19px;
+    padding-right: 0px;
 
     font-size: 13px;
     font-weight: 400;
@@ -1448,6 +1482,7 @@ li:hover .product-menu {
 
 .filter legend {
     padding: 13px 0;
+    padding-top: 11px;
 
     font-size: 17px;
     font-weight: 700;
@@ -1477,7 +1512,7 @@ li:hover .product-menu {
 }
 
 .range-controls .bar {
-    width: 70%;
+    width: 80%;
     height: 2px;
 
     background: #00ca74;
@@ -1504,7 +1539,15 @@ li:hover .product-menu {
 }
 
 .range-controls .toggle-max {
-    left: 145px;
+    left: 159px;
+}
+
+.filter .legend-brands {
+    padding-top: 15px;
+}
+
+.filter .legend-power {
+    padding-top: 22px;
 }
 
 .price-controls {
@@ -1550,7 +1593,7 @@ li:hover .product-menu {
 }
 
 .filter-option .power {
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .filter-option .producers::before {
@@ -1661,7 +1704,9 @@ li:hover .product-menu {
 
 .filter-button {
     margin-top: 57px;
-    padding: 10px 38px;
+    padding: 10px 36px;
+    padding-top: 13px;
+    padding-left: 37px;
 
     background-color: transparent;
     border: 1px solid #e5e5e5;
@@ -1756,11 +1801,12 @@ li:hover .product-menu {
 .catalog .content-header {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: left;
 }
 
 .sort-list {
     margin: 0;
+    margin-left: 80px;
     padding: 0;
 
     list-style: none;
@@ -1770,6 +1816,10 @@ li:hover .product-menu {
     display: inline-block;
     vertical-align: baseline;
     margin-left: 60px;
+}
+
+.sort-list li:first-child {
+    margin-right: 8px;
 }
 
 .sort-list a {
@@ -1798,6 +1848,7 @@ li:hover .product-menu {
 
 .sort-list-decrease {
     margin: 0;
+    margin-left: 45px;
     padding: 0;
 
     list-style: none;
@@ -1806,7 +1857,7 @@ li:hover .product-menu {
 .sort-list-decrease li {
     display: inline-block;
     vertical-align: baseline;
-    margin-right: 15px;
+    margin-right:13px;
 }
 
 .sort-list-decrease li:last-child {
@@ -1873,15 +1924,24 @@ li:hover .product-menu {
 .pagination-list li {
     display: inline-block;
     vertical-align: baseline;
-    margin-right: 10px;
+    margin-right: 9px;
+}
+
+.pagination-list li:nth-child(3) {
+    margin-left: -3px;
+}
+
+.pagination-list li:last-child {
+    margin-left: -3px;
 }
 
 .pagination-item a {
     display: block;
-    width: 38px;
-    height: 38px;
+    width: 37px;
+    height: 37px;
 
     color: #000000;
+    font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
     line-height: 38px;
     text-align: center;
     text-transform: uppercase;
@@ -1916,13 +1976,19 @@ li:hover .product-menu {
 
 .theory .container {
     padding: 65px 0;
-    padding-bottom: 61px;
+    padding-bottom: 67px;
 }
+
+
 
 .theory .section-desc {
     padding: 0;
     margin: 0;
     margin-top: 35px;
+}
+
+.theory .mt3 {
+    margin-top: 32px;
 }
 
 .footer-wrapper {
@@ -1970,13 +2036,17 @@ li:hover .product-menu {
     color: #f3f7f9;
 }
 
+.footer-top-contacts {
+    margin-left: 2px;
+}
+
 .footer-top {
     background-color: #3d546e;
 }
 
 .footer-top .footer-wrapper:nth-child(2) {
-    margin-top: 30px;
-    padding-bottom: 45px;
+    margin-top: 25px;
+    padding-bottom: 48px;
 }
 
 .footer-top-list li {
@@ -2014,7 +2084,7 @@ li:hover .product-menu {
 .footer-bottom .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: left;
     padding-top: 35px;
     padding-bottom: 35px;
 }
@@ -2036,17 +2106,27 @@ li:hover .product-menu {
     color: #ffffff;
 }
 
+.developers {
+    margin-top: 3px;
+}
+
+.developers:last-of-type {
+    margin-left: 40px;
+}
+
 .footer-social + .gold {
     width: 150px;
 }
 
 .footer-copyright {
     width: 245px;
+    margin-top: 2px;
+    margin-right: 75px;
 }
 
 .footer-social {
     width: 140px;
-    margin-right: 0px;
+    margin-right: 110px;
     padding-left: 70px;
 }
 
